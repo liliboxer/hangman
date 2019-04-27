@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 body {
     text-align: center;
 }
 
 h1 {
-    color: red;
+    font-family: Lobster;
+    font-size: 4em;
 }
 
 div {
     position: absolute;
-    top: 32%;
+    top: 39%;
     left: 50%;
     width: 500px;
     height: 250px;
@@ -55,4 +58,19 @@ div {
     position: absolute;
     top: 56%;
     left: 63%;
+}
+
+button {
+    position: absolute;
+    top: 85%;
+    left: 36%;
+    font-size: 3em;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+button:hover {
+    background: white;
+    color: black;
 }
