@@ -9,8 +9,6 @@ const guessButton = document.getElementById('guess-button');
 guessButton.addEventListener('click', () => {
     const randomInteger = getRandomInteger(9);
     const word = getWord(possibleWords[randomInteger]); 
-
-    console.log(word);
 });
 
 

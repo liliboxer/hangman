@@ -1,5 +1,6 @@
 import getRandomInteger from '../src/get-random-integer.js';
 import getWord from '../src/get-word.js';
+import generateLettersOfWord from '../src/generate-letters-of-word.js';
 
 const test = QUnit.test;
 
@@ -30,6 +31,26 @@ test('get word', function(assert) {
     //Act 
     // Call the function you're testing and set the result to a const
     const result = getWord(expectedList[2]);
+   
+    
+
+    //Assert
+    assert.equal(result, expectedWord);
+
+});
+
+/////
+
+test('generate letters of word', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const expectedList = ['hello', 'world', 'max', 'cat'];
+    const expectedWord = 'max';
+
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = generateLettersOfWord
    
     
 
