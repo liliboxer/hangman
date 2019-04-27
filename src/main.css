@@ -8,10 +8,10 @@ h1 {
 
 div {
     position: absolute;
-    top: 50%;
+    top: 32%;
     left: 50%;
     width: 500px;
-    height: 500px;
+    height: 250px;
     transform: translateX(-50%) translateY(-50%);
 }
 
@@ -22,37 +22,37 @@ div {
 
 #head {
     position: absolute;
-    top: 6%;
+    top: 13%;
     left: 58.5%;
 
 }
 
 #body {
     position: absolute;
-    top: 14%;
+    top: 29%;
     left: 62%;
 }
 
 #left-arm {
     position: absolute;
-    top: 17%;
+    top: 30%;
     left: 55%;
 }
 
 #right-arm {
     position: absolute;
-    top: 17%;
+    top: 30%;
     left: 63%;
 }
 
 #left-leg {
     position: absolute;
-    top: 26%;
+    top: 56%;
     left: 55%;
 }
 
 #right-leg {
     position: absolute;
-    top: 26%;
+    top: 56%;
     left: 63%;
 }
