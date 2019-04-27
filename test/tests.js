@@ -44,17 +44,15 @@ test('get word', function(assert) {
 test('generate letters of word', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const expectedList = ['hello', 'world', 'max', 'cat'];
-    const expectedWord = 'max';
+    const word = 'max';
+    const expected = ['m', 'a', 'x'];
 
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = generateLettersOfWord
+    const result = generateLettersOfWord(word);
    
-    
-
     //Assert
-    assert.equal(result, expectedWord);
+    assert.equal(result, expected);
 
 });
