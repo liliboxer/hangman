@@ -4,12 +4,12 @@ import possibleWords from './possible-words.js';
 import generateLettersOfWords from './generate-letters-of-word.js';
 
 // adding events
-const guessButton = document.getElementById('guess-button');
+const playButton = document.getElementById('play-button');
 
 // subscribing
-guessButton.addEventListener('click', () => {
+playButton.addEventListener('click', () => {
     const randomInteger = getRandomInteger(9);
-    const word = generateLettersOfWords(getWord(possibleWords[randomInteger]))
+    const word = generateLettersOfWords(getWord(possibleWords[randomInteger]));
     console.log(randomInteger, word);
     
     

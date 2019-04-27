@@ -1,8 +1,7 @@
 function generateLettersOfWord(word) {
     const arrayWord = word.split('');
 
-    console.log(arrayWord);
-    return arrayWord;
+    return arrayWord[0];
 }
 
 export default generateLettersOfWord;

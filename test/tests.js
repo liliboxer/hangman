@@ -1,6 +1,7 @@
 import getRandomInteger from '../src/get-random-integer.js';
 import getWord from '../src/get-word.js';
 import generateLettersOfWord from '../src/generate-letters-of-word.js';
+import divsBasedOnWord from '../src/divs-based-on-word.js';
 
 const test = QUnit.test;
 
@@ -45,7 +46,7 @@ test('generate letters of word', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const word = 'max';
-    const expected = ['m', 'a', 'x'];
+    const expected = 'm';
     console.log(expected);
 
 
@@ -56,4 +57,24 @@ test('generate letters of word', function(assert) {
     //Assert
     assert.equal(result, expected);
 
+    //// setting const expected to an array output? 
 });
+
+test('diplay # of divs based on # of letters in word', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const word = 'max';
+    const expected = '<div></div><div></div><div></div>';
+
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = divsBasedOnWord();
+   
+    
+
+    //Assert
+    assert.equal(result, expected);
+
+});
+
