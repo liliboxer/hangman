@@ -45,7 +45,8 @@ test('generate letters of word', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const word = 'max';
-    const expected = 'm';
+    const expected = ['m', 'a', 'x'];
+    console.log(expected);
 
 
     //Act 
