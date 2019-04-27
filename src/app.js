@@ -1,18 +1,22 @@
 import getRandomInteger from './get-random-integer.js';
 
-const possibleWords = [
-    'hello',
-    'world', 
-    'cat', 
-    'water',
-    'computer',
-    'notebook',
-    'pen',
-    'alchemy',
-    'programming'
-];
+// list of possible words
+const possibleWords = ['hello', 'world', 'alchemy', 'programming', 'computer', 
+                            'desk', 'pen', 'notebook', 'water', 'monitor'];
 
-console.log(getRandomInteger());
+
+
+
+// adding events
+const guessButton = document.getElementById('guess-button');
+
+// subscribing
+guessButton.addEventListener('click', () => {
+    const randomInteger = getRandomInteger(9);
+   
+    console.log(randomInteger);
+});
+
 
 
 
