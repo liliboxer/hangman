@@ -31,6 +31,7 @@ test('get word', function(assert) {
     // Call the function you're testing and set the result to a const
     const result = getWord(expectedList[2]);
    
+    
 
     //Assert
     assert.equal(result, expectedWord);
