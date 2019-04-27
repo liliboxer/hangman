@@ -1,4 +1,5 @@
 import getRandomInteger from '../src/get-random-integer.js';
+import getWord from '../src/get-word.js';
 
 const test = QUnit.test;
 
@@ -14,5 +15,24 @@ test('get random whole number', function(assert) {
 
     //Assert
     assert.equal(result, booleanResult);
+
+});
+
+/////
+
+test('get word', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const expectedList = ['hello', 'world', 'max', 'cat'];
+    const expectedWord = 'max';
+
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = getWord(expectedList[2]);
+   
+
+    //Assert
+    assert.equal(result, expectedWord);
 
 });
