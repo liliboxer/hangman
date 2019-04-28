@@ -1,12 +1,9 @@
 function divsBasedOnWord(parentElement, word) {
-    const section = document.createElement('section');
-    const div = document.createElement('div');
+    for (let i = 0; i < word.length; i++) {
+        const div = document.createElement('div');
+        parentElement.appendChild(div);
+    }
 
-    section.appendChild(div);
-    section.appendChild(div);
-    section.appendChild(div);
-
-    console.log(section)
 }
 
 export default divsBasedOnWord;

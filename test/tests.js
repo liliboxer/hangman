@@ -28,13 +28,10 @@ test('get word', function(assert) {
     const expectedList = ['hello', 'world', 'max', 'cat'];
     const expectedWord = 'max';
 
-
     //Act 
     // Call the function you're testing and set the result to a const
     const result = getWord(expectedList[2]);
    
-    
-
     //Assert
     assert.equal(result, expectedWord);
 
@@ -46,33 +43,37 @@ test('generate letters of word', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const word = 'max';
-    const expected = 'm';
+    const expected = ['m', 'a', 'x'];
+
+    console.log(expected);
 
     //Act 
     // Call the function you're testing and set the result to a const
     const result = generateLettersOfWord(word);
+
+    console.log(result);
    
     //Assert
-    assert.equal(result, expected);
+    assert.deepEqual(result, expected);
 
     //// setting const expected to an array output? 
 });
 
+
 test('diplay # of divs based on # of letters in word', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const word = 'max';
+    const word = ['m', 'a', 'x'];
     const parentElement = document.createElement('section');
-    const expected = '<<section>div></div><div></div><div></div></section>';
-
-
+    const expected = '<section><div></div><div></div><div></div></section>';
 
     //Act 
     // Call the function you're testing and set the result to a const
     divsBasedOnWord(parentElement, word);
    
     //Assert
-    assert.equal(parentElement.parentInnerHTML, expected);
+    const parentOuterHTML = parentElement.outerHTML;
+    assert.equal(parentOuterHTML, expected);
 
 });
 
