@@ -61,7 +61,7 @@ test('diplay # of divs based on # of letters in word', function(assert) {
     // Set up your parameters and expectations
     const word = ['m', 'a', 'x'];
     const parentElement = document.createElement('section');
-    const expected = '<section><div></div><div></div><div></div></section>';
+    const expected = '<section><div class="letter"></div><div class="letter"></div><div class="letter"></div></section>';
 
     //Act 
     // Call the function you're testing and set the result to a const
