@@ -10,28 +10,26 @@ h1 {
 }
 
 div {
-    position: absolute;
-    top: 39%;
-    left: 50%;
+    margin: 0px auto;
     width: 500px;
     height: 250px;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-5%) translateY(10%);
 }
 .word-being-guessed{
    position: absolute;
-   border: 1px black solid;
+   /* border: 1px black solid; */
    top: 69%;
-   left: 25%;
-   width: 500px;
+   left: 14%;
+   width: 1000px;
    height: 80px;
 }
 div.letter {
-    position: absolute;
-    display: inline;
+    display: inline-block;
     top: 52%;
     width: 50px;
     height: 50px;
     border: 1px solid black;
+    margin: 10px;
 }   
 
 #gallows {
@@ -79,7 +77,7 @@ div.letter {
 button {
     position: absolute;
     top: 85%;
-    left: 36%;
+    left: 40%;
     font-size: 3em;
     padding: 20px;
     background: black;
