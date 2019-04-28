@@ -6,6 +6,7 @@ import divsBasedOnWord from './divs-based-on-word.js';
 
 // adding events
 const playButton = document.getElementById('play-button');
+const emptyWord = document.getElementById('empty-word');
 
 // subscribing
 playButton.addEventListener('click', () => {
