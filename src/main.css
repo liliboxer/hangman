@@ -17,9 +17,12 @@ div {
     height: 250px;
     transform: translateX(-50%) translateY(-50%);
 }
-
+.word-being-guessed{
+    display: absolute;
+}
 div.letter {
     position: absolute;
+    display: inline;
     top: 70%;
     width: 50px;
     height: 50px;

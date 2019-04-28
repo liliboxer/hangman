@@ -45,13 +45,9 @@ test('generate letters of word', function(assert) {
     const word = 'max';
     const expected = ['m', 'a', 'x'];
 
-    console.log(expected);
-
     //Act 
     // Call the function you're testing and set the result to a const
     const result = generateLettersOfWord(word);
-
-    console.log(result);
    
     //Assert
     assert.deepEqual(result, expected);
