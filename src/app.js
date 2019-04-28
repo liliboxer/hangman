@@ -12,13 +12,11 @@ const emptyWord = document.getElementById('empty-word');
 playButton.addEventListener('click', () => {
     const randomInteger = getRandomInteger(9);
     const word = generateLettersOfWords(getWord(possibleWords[randomInteger]));
-    const wordToGuess = divsBasedOnWord(emptyWord, word);
+    divsBasedOnWord(emptyWord, word);
 
-    console.log(wordToGuess);
-    
 });
 
-
+console.log(emptyWord);
 
 
 
