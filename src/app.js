@@ -13,10 +13,5 @@ playButton.addEventListener('click', () => {
     const randomInteger = getRandomInteger(9);
     const word = generateLettersOfWords(getWord(possibleWords[randomInteger]));
     divsBasedOnWord(emptyWord, word);
-
 });
-
-console.log(emptyWord);
-
-
 
