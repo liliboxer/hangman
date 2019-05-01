@@ -1,3 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {
+    text-align: center;
+}
+
 h1 {
-    color: red;
+    font-family: Lobster;
+    font-size: 4em;
+}
+
+div {
+    margin: 0px auto;
+    width: 500px;
+    height: 250px;
+    transform: translateX(-5%) translateY(10%);
+}
+.word-being-guessed{
+   position: absolute;
+   /* border: 1px black solid; */
+   top: 69%;
+   left: 14%;
+   width: 1000px;
+   height: 80px;
+}
+div.letter {
+    display: inline-block;
+    top: 52%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px;
+}   
+
+#gallows {
+    position: absolute;
+    left: 28%;
+}
+
+#head {
+    position: absolute;
+    top: 13%;
+    left: 58.5%;
+
+}
+
+#body {
+    position: absolute;
+    top: 29%;
+    left: 62%;
+}
+
+#left-arm {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+#right-arm {
+    position: absolute;
+    top: 30%;
+    left: 63%;
+}
+
+#left-leg {
+    position: absolute;
+    top: 56%;
+    left: 55%;
+}
+
+#right-leg {
+    position: absolute;
+    top: 56%;
+    left: 63%;
+}
+
+button {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    font-size: 3em;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+button:hover {
+    background: white;
+    color: black;
 }
